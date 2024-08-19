@@ -26,7 +26,7 @@ Then, add the chip to your circuit by adding a `chip-rdm6300` item to the `parts
 ```json
   "parts": {
     ...,
-    { "type": "chip-rdm6300", "id": "chip1", }
+    { "type": "chip-rdm6300", "id": "chip1" }
   },
 ```
 
