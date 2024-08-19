@@ -1,7 +1,8 @@
 {
   "id": "wokwi-rdm6300-custom-chip",
   "name": "RDM6300",
-  "author": "DjEdu28",
+  "author": "Edu Santos - DjEdu28",
+  "docs": "https://github.com/djedu28/wokwi-rdm6300-custom-chip/blob/main/README.md",
   "pins": [
     "VCC",
     "GND",
