@@ -26,7 +26,7 @@ typedef struct {
   uint8_t value;
   
   uint8_t manual_value;
-  string_t manual_value_attribute; 
+  uint8_t manual_value_attribute; 
 } chip_state_t;
 
 static void on_uart_rx_data(void *user_data, uint8_t byte);
