@@ -1,6 +1,8 @@
 # Wokwi RDM6300 Custom Chip
 
-This is a basic custom chip for [Wokwi](https://wokwi.com/). It implements a inverter: the output is always opposite to the input.
+This is a rdm6300 custom chip for [Wokwi](https://wokwi.com/). It implements a RDM6300.
+
+![rdm6300 photo](rdm6300_photo.png)
 
 ## Pin names
 
@@ -30,6 +32,6 @@ Then, add the chip to your circuit by adding a `chip-rdm6300` item to the `parts
   },
 ```
 
-For a complete example, see [the RDM6300 chip test project](https://wokwi.com/).
+For a complete example, see [the RDM6300 chip test project](https://wokwi.com/projects/406609878692164609).
 
 more project [makers djedu28](https://wokwi.com/makers/djedu28)
