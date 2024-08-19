@@ -10,6 +10,6 @@
     
   ],
   "dependencies": {
-    "chip-rdm6300": "github:djedu28/wokwi-rdm6300-custom-chip@0.28.1"
+    "chip-rdm6300": "github:djedu28/wokwi-rdm6300-custom-chip@0.28.2"
   }
 }
