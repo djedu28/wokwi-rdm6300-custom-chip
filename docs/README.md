@@ -1,6 +1,6 @@
 # Wokwi RDM6300 Custom Chip
 
-This is a rdm6300 custom chip for [Wokwi](https://wokwi.com/). It implements a RDM6300.
+This is a rdm6300 custom chip for [Wokwi](https://wokwi.com/projects/413756374638336001). It implements a RDM6300.
 
 ![rdm6300 photo](rdm6300_photo.png)
 
