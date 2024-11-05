@@ -1,6 +1,9 @@
 # RDM6300 Chip example
+This is a rdm6300 custom chip for [Wokwi](https://wokwi.com/projects/413756374638336001). It implements a [RDM6300](docs/README.md).
 
-Example of a basic custom chip for [Wokwi](https://wokwi.com/).
+![rdm6300 photo](/docs/rdm6300_photo.png)
+
+RDM6300 Chip - README [docs/README.md](docs/README.md)
 
 The actual source code for the chip lives in [src/main.c](src/main.c), and the pins are described in [chip.json](chip.json).
 
