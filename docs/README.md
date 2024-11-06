@@ -19,7 +19,7 @@ To use this chip in your project, include it as a dependency in your `diagram.js
 
 ```json
   "dependencies": {
-    "chip-rdm6300": "github:djedu28/wokwi-rdm6300-custom-chip@@1.28.0"
+    "chip-rdm6300": "github:djedu28/wokwi-rdm6300-custom-chip@1.28.0"
   }
 ```
 
