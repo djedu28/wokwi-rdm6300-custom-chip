@@ -1,18 +1,39 @@
 {
   "id": "wokwi-rdm6300-custom-chip",
   "name": "RDM6300",
+  "version": "1.28.0",
   "author": "Edu Santos - DjEdu28",
+  "authorUrl": "https://github.com/djedu28",
+  "license": "MIT",
   "docs": "https://github.com/djedu28/wokwi-rdm6300-custom-chip/blob/main/docs/README.md",
   "pins": [
-    "VCC",
-    "GND",
+    "",
     "RX",
-    "TX"
+    "TX",
+    "GND",
+    "VCC",
+    ""
   ],
   "controls": [
     {
       "id": "haveCard",
       "label": "Cartão proximo. 0-NÃO e 1-SIM",
+      "type": "range",
+      "min": 0,
+      "max": 1,
+      "step": 1
+    },
+    {
+      "id": "card1",
+      "label": "Card1: 62E3086CED",
+      "type": "range",
+      "min": 0,
+      "max": 1,
+      "step": 1
+    },
+    {
+      "id": "card2",
+      "label": "Card2: 62EDEDEDED",
       "type": "range",
       "min": 0,
       "max": 1,

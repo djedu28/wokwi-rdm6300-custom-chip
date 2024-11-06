@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "author": "Edu Santos",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "chip-rdm6300", "id": "chip3", "top": 97.02, "left": 302.4, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -166.8,
+      "left": 330.2,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -166.8,
+      "left": 407,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -207.25,
+      "left": 297.6,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -207.25,
+      "left": 374.4,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    { "type": "wokwi-gnd", "id": "gnd1", "top": -230.4, "left": 354.6, "attrs": {} },
+    { "type": "wokwi-lcd1602", "id": "lcd", "top": -198.17, "left": -32, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "rlcd",
+      "top": -63.25,
+      "left": 153.6,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "chip3:VCC", "uno:5V", "red", [ "h78.61", "v115.2", "h-329.6" ] ],
+    [ "chip3:GND", "uno:GND.2", "black", [ "h59.41", "v124.8", "h-300.9" ] ],
+    [ "chip3:TX", "uno:0", "gold", [ "h-19.2", "v-153.6", "h-32.5" ] ],
+    [ "r1:2", "led1:C", "black", [ "h-0.55", "v47.65" ] ],
+    [ "led2:C", "r2:2", "black", [ "v0", "h-18.8" ] ],
+    [ "r1:1", "gnd1:GND", "black", [ "h0" ] ],
+    [ "r2:1", "gnd1:GND", "black", [ "h0" ] ],
+    [ "uno:GND.1", "lcd:VSS", "black", [ "v-51", "*", "h0", "v18" ] ],
+    [ "uno:GND.1", "lcd:K", "black", [ "v-51", "*", "h0", "v18" ] ],
+    [ "uno:GND.1", "lcd:RW", "black", [ "v-51", "*", "h0", "v18" ] ],
+    [ "uno:5V", "lcd:VDD", "red", [ "v16", "h-16" ] ],
+    [ "uno:5V", "rlcd:2", "red", [ "v16", "h-118", "v-244", "h50" ] ],
+    [ "rlcd:1", "lcd:A", "pink", [] ],
+    [ "uno:12", "lcd:RS", "blue", [ "v-16", "*", "h0", "v20" ] ],
+    [ "uno:11", "lcd:E", "purple", [ "v-20", "*", "h0", "v20" ] ],
+    [ "uno:10", "lcd:D4", "green", [ "v-24", "*", "h0", "v20" ] ],
+    [ "uno:9", "lcd:D5", "brown", [ "v-28", "*", "h0", "v20" ] ],
+    [ "uno:8", "lcd:D6", "gold", [ "v-32", "*", "h0", "v20" ] ],
+    [ "uno:7", "lcd:D7", "gray", [ "v-36", "*", "h0", "v20" ] ],
+    [ "uno:6", "led1:A", "violet", [ "v-28.2", "h22.3", "v-38.4", "h134.4" ] ],
+    [ "led2:A", "uno:5", "green", [ "v76.8", "h-201.6", "v38.4", "h-22.4" ] ]
+  ],
+  "dependencies": {
+    "--chip-rdm6300": "github:djedu28/wokwi-rdm6300-custom-chip@1.28.0"
+  }
+}

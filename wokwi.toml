@@ -1,7 +1,7 @@
 [wokwi]
 version = 1
-elf = 'test/blink/build/arduino.avr.uno/blink.ino.elf'
-firmware = 'test/blink/build/arduino.avr.uno/blink.ino.hex'
+elf = 'test/RDM6300/build/arduino.avr.uno/RDM6300.ino.elf'
+firmware = 'test/RDM6300/build/arduino.avr.uno/RDM6300.ino.hex'
 
 [[chip]]
 name = 'rdm6300'

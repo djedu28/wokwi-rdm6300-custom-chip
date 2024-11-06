@@ -4,12 +4,14 @@
   "editor": "wokwi",
   "parts": [
     { "type": "wokwi-arduino-uno", "id": "uno", "top": 150, "left": 20, "attrs": {} },
-    { "type": "chip-rdm6300", "id": "chip1", "top": 50, "left": 0, "attrs": {} }
+    { "type": "chip-rdm6300", "id": "chip1", "top": 50, "left": 0, "attrs": {} },
+    { "type": "wokwi-vcc", "id": "vcc1", "top": 19.96, "left": -86.4, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "gnd1", "top": 96, "left": -87, "attrs": {} }
   ],
   "connections": [
-    
+    [ "chip1:TX", "uno:0", "gold", [ "h150.61", "v56.62", "h19.2" ] ],
+    [ "chip1:GND", "gnd1:GND", "black", [ "h-81.6", "v18.22" ] ],
+    [ "chip1:VCC", "vcc1:VCC", "red", [ "h0" ] ]
   ],
-  "dependencies": {
-    
-  }
+  "dependencies": {}
 }

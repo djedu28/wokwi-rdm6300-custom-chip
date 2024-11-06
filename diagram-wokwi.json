@@ -7,9 +7,11 @@
     { "type": "chip-rdm6300", "id": "chip1", "top": 50, "left": 0, "attrs": {} }
   ],
   "connections": [
-    
+    [ "chip1:TX", "uno:0", "gold", [ "h150.61", "v56.62", "h19.2" ] ],
+    [ "chip1:GND", "gnd1:GND", "black", [ "h-81.6", "v18.22" ] ],
+    [ "chip1:VCC", "vcc1:VCC", "red", [ "h0" ] ]
   ],
   "dependencies": {
-    "chip-rdm6300": "github:djedu28/wokwi-rdm6300-custom-chip@0.28.2"
+    "chip-rdm6300": "github:djedu28/wokwi-rdm6300-custom-chip@1.28.0"
   }
 }
